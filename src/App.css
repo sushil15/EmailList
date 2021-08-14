@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    min-height:100vh;
+    background-color: ghostwhite;
+    font-family: 'Poppins', sans-serif;
+
+}
+.mainDiv{
+    width:  100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+}
+.registerMainDiv,.loginMainDiv,.EmailListMainDiv{
+    width:100%;
+
+}
+.email_div{
+    border-bottom: 1px solid black;
+}
+.emailList{
+    max-height:400px;
+    overflow: auto;
+}
+.emailList{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
+}
+
+.emailList{
+    display: none; 
+}
+@media only screen and (max-width:998px) {
+.emailList{
+    height:auto;
+}
+}
